@@ -1,0 +1,122 @@
+.box{
+    width:500px;
+    height: 500px;
+    background-color:gray;
+
+}
+
+.thread1{
+    width:16px;
+    height: 250px;
+    background-color: black;
+    position: relative;
+    left:140px;
+    display: inline-block;
+    animation: move 3s   infinite;
+}
+.thread2{
+    width:16px;
+    height: 250px;
+    background-color: black;
+    position: relative;
+    left:283px;
+    display: inline-block;
+    animation: move 3s   infinite;
+}
+.level{
+    height: 250px;
+    width:250px;
+    background-color: palegreen;
+    position: relative;
+    left:110px;
+    
+    animation:ballon 3s ease-in-out  infinite;
+    color:transparent;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+
+
+
+.head{
+    width:50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    left: 92px;
+}
+
+.stomach{
+    width: 20px;
+    height: 150px;
+    background-color: black;
+    position: relative;
+    left: 106px;
+}
+
+.hand1{
+    width:10px;
+    height: 120px;
+    background-color: black;
+    position: relative;
+    top:-149px;
+    left: 64px;
+    transform: rotate(20deg);
+}
+
+.hand2{
+    width:10px;
+    height: 120px;
+    background-color: black;
+    position: relative;
+    top:-270px;
+    left:158px;
+    transform: rotate(-20deg);
+}
+
+.leg1{
+    width:20px;
+    height: 100px;
+    background-color: black;
+    position: relative;
+    top:-294px;
+    left:60px;
+    transform: rotate(20deg);
+}
+
+.leg2{
+    width:20px;
+    height: 100px;
+    background-color: black;
+    position: relative;
+    top:-396px;
+    left:147px;
+    transform: rotate(-20deg);
+}
+
+@keyframes move {
+    10%{
+        height: 220px;
+    }
+    30%{
+        height: 180px;
+    }
+    50%{
+        height: 130px;
+    }
+}
+
+@keyframes ballon {
+    10%{
+        transform: translateY(-30px);
+    }
+    30%{
+        transform: translateY(-70px);
+    }
+    50%{
+        transform: translateY(-120px);
+    }
+    
+}
